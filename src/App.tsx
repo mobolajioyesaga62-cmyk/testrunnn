@@ -38,7 +38,7 @@ function App() {
   }, [setUser]);
 
   return (
-    <Router>
+    <Router basename={import.meta.env.BASE_URL || '/'}>
       <Routes>
         <Route path="/admin" element={<AdminPage />} />
         <Route path="/add/admin" element={<AdminPage />} />
