@@ -41,6 +41,7 @@ function App() {
     <Router>
       <Routes>
         <Route path="/admin" element={<AdminPage />} />
+        <Route path="/add/admin" element={<AdminPage />} />
         <Route path="/*" element={
           <Layout>
             <Routes>
